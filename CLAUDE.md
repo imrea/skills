@@ -47,4 +47,4 @@ allowed-tools: Bash, Read, Edit, ...
 
 ## Conventions
 
-- Commit messages: [Conventional Commits](skills/engineering/git-cz/SKILL.md)
+- Commit messages: [Conventional Commits](skills/engineering/cz/SKILL.md)

@@ -1,5 +1,5 @@
 ---
-name: git-cz
+name: cz
 description: 'Execute git commit with conventional commit message analysis, intelligent staging, and message generation. Use when user asks to commit changes, create a git commit, or mentions "/commit". Supports: (1) Auto-detecting type from changes, (2) Generating cz-git/czg-style conventional commit messages from diff, (3) Extracting ticket ID from branch name, (4) Intelligent file staging for logical grouping'
 allowed-tools: Bash
 ---
@@ -99,7 +99,7 @@ From the diff determine:
 - **Type**: What kind of change?
 - **Description**: One-line summary, present tense, imperative mood, ≤70 chars
 - **Issue**: From branch name (step 1)
-- **Body**: Optional. Use when the subject alone doesn't explain the *why* or *what* for non-obvious changes. Wrap at 72 chars.
+- **Body**: Optional. Use when the subject alone doesn't explain the *why* or *what* for non-obvious changes. Format as a bullet list — one point per line, each prefixed with `- `. No flowing prose.
 
 Construct: `<type>: <emoji> [#<issue>] <description>` (omit issue if none found)
 
@@ -112,9 +112,9 @@ Here's the commit message:
 
 feat: :sparkles: [GS-23] add user authentication flow
 
-Implements JWT-based auth with refresh token rotation.
-Session store moved from cookie to localStorage to support
-the new SSO requirements.
+- implement JWT-based auth with refresh token rotation
+- move session store from cookie to localStorage
+- support new SSO requirements
 
 Does this look good? Any changes to subject or body?
 ```

@@ -1,7 +1,7 @@
 {
   "name": "imrea-skills",
   "skills": [
-    "./skills/engineering/git-cz",
+    "./skills/engineering/cz",
     "./skills/productivity/obsidian-impulse",
     "./skills/productivity/obsidian-article"
   ]
