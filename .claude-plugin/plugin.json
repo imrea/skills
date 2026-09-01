@@ -2,6 +2,7 @@
   "name": "imrea-skills",
   "skills": [
     "./skills/engineering/cz",
+    "./skills/engineering/nerdyman",
     "./skills/productivity/obsidian-impulse",
     "./skills/productivity/obsidian-article"
   ]
